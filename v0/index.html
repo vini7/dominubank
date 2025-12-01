@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banka Dominusoft</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f6fa;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo img {
+            height: 70px;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #0077cc;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 700px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            color: #1a2a44;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #0077cc;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background: #005fa3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/dominusoft_logo.png" alt="Dominusoft Education Logo" />
+        </div>
+        <nav>
+            <a href="#">Kreu</a>
+            <a href="#">Login</a>
+            <a href="#">Kush jemi</a>
+            <a href="#">Suporti</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mirësevini në Bankën Dominusoft</h1>
+            <p>Ky aplikacion do të shërbejë si pjesë e kursit të Sigurisë kibernetike.</p>
+            <button class="cta-button" onclick="location.href='login.php'">Hyr në Online Banking</button>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Dominusoft Bank — Ambient Trajnimi
+    </footer>
+</body>
+</html>
