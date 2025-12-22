@@ -19,6 +19,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login_submit'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
+    // $stmt = mysqli_prepare(
+    //     $conn, "SELECT id, username FROM users WHERE username = ? AND password = ? LIMIT 1" );
+
+    // if ($stmt) { 
+    //     mysqli_stmt_bind_param($stmt, "ss", $username, $password);
+    //     mysqli_stmt_execute($stmt);
+    //     $result = mysqli_stmt_get_result($stmt);
+    // }
+   
     $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $result = mysqli_query($conn, $sql);
 
